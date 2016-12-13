@@ -38,4 +38,11 @@ public class SessaoTest {
 		Assert.assertEquals(2, sessao.getIngressosDisponiveis().intValue());
 	}
 	
+	@Test
+	public void deveVender2IngressoSeHa2Vagas() {
+		Sessao sessao = new Sessao();
+		sessao.setTotalIngressos(2);
+		Assert.assertTrue(sessao.podeReservar(2));
+	}
+	
 }
