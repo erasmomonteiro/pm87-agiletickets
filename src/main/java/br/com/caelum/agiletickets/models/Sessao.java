@@ -121,4 +121,12 @@ public class Sessao {
 		return preco;
 	}
 	
+	/**
+	 * Retorna a taxa de ocupação
+	 * @return
+	 */
+	public double obterTaxaOcupacao() {
+		return (getTotalIngressos() - getIngressosReservados()) / getTotalIngressos().doubleValue();
+	}
+	
 }
