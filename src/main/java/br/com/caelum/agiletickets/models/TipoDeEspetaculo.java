@@ -6,7 +6,7 @@ public enum TipoDeEspetaculo {
 	SHOW(0.05, 0.10, false),
 	TEATRO(0.0, 0.0, false),
 	BALLET(0.50, 0.20, true),
-	ORQUESTRA(0.50, 0.20, true);
+	ORQUESTRA(0.5, 0.20, true);
 	
 	private double taxaOcupacaoTarifa;
 	private double tarifaAdicionalTempo;
